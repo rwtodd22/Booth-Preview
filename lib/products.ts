@@ -7,6 +7,12 @@ export type Product = {
   features: string[];
   images: string[];
   details: [string, string][];
+  alternateConfiguration?: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    images: { src: string; label: string }[];
+  };
 };
 
 export const products: Product[] = [
@@ -18,6 +24,18 @@ export const products: Product[] = [
     description: '10x20 kit featuring an extended locking storage room, a four-panel backlit display, a side return attached with L-connectors, and a standard counter. Kit includes printed graphics.',
     features: ['Storage Room', 'Backlit'],
     images: ['/product/view-1.webp', '/product/view-2.webp', '/product/view-3.webp'],
+    alternateConfiguration: {
+      eyebrow: 'Expand the footprint',
+      title: 'Also works as a 20x20 kit',
+      description: 'By applying graphics to the back side of the exhibit, G-214 can also be used within a 20x20 space. These reference views show how the same structure can present a finished experience from multiple approaches in a larger island-style footprint.',
+      images: [
+        { src: '/product/g214-20x20/default.jpeg', label: 'Front perspective' },
+        { src: '/product/g214-20x20/alt.jpeg', label: 'Alternate perspective' },
+        { src: '/product/g214-20x20/top.jpeg', label: '20x20 floor-plan view' },
+        { src: '/product/g214-20x20/rear.jpeg', label: 'Rear graphic area' },
+        { src: '/product/g214-20x20/side.jpeg', label: 'Side elevation' },
+      ],
+    },
     details: [
       ['Product Details', 'A complete 10x20 modular exhibit kit with an extended locking storage room, four-panel backlit display, side return, L-connectors, and standard counter. Printed graphics are included.'],
       ['Dimensions', '20 ft wide × 10 ft deep. Components pack down for streamlined transport and repeat use.'],
