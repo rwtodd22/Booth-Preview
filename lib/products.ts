@@ -23,7 +23,7 @@ export const products: Product[] = [
     brand: 'Looboo',
     description: '10x20 kit featuring an extended locking storage room, a four-panel backlit display, a side return attached with L-connectors, and a standard counter. Kit includes printed graphics.',
     features: ['Storage Room', 'Backlit'],
-    images: ['/product/view-1.webp', '/product/view-2.webp', '/product/view-3.webp'],
+    images: ['/product/g214-estes/view-1.png', '/product/g214-estes/view-2.png', '/product/g214-estes/view-3.png'],
     alternateConfiguration: {
       eyebrow: 'Expand the footprint',
       title: 'Also works as a 20x20 kit',
