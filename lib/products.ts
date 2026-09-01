@@ -50,7 +50,15 @@ export const products: Product[] = [
     brand: 'Looboo',
     description: '10x10 kit featuring a 1x1 locking storage room, a two-panel backlit display, side-panel return attached with L-connectors, a monitor bracket, and a standard counter. Kit includes printed graphics.',
     features: ['Backlit', 'Storage Room'],
-    images: Array.from({ length: 7 }, (_, index) => `/product/g107/view-${index + 1}.webp`),
+    images: [
+      '/product/g107-estes/view-1.png',
+      '/product/g107-estes/view-2.png',
+      '/product/g107-estes/view-3.png',
+      '/product/g107/view-4.webp',
+      '/product/g107-estes/view-5.png',
+      '/product/g107-estes/view-6.png',
+      '/product/g107/view-7.webp',
+    ],
     details: [
       ['Product Details', 'A compact 10x10 exhibit kit combining illuminated graphics, secure storage, a monitor bracket, and a practical counter in one coordinated footprint.'],
       ['Dimensions', '10 ft wide × 10 ft deep, sized for a standard inline trade show booth.'],
